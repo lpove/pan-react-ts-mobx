@@ -6,6 +6,7 @@
 -   [x] 添加 scss 支持
 -   [x] 添加函数式编程，hooks
 -   [x] 添加主要应用 use 等
+-   [x] 加入了 eslint 以后电脑内存吃紧
 
 ## webpack 启动说明
 
