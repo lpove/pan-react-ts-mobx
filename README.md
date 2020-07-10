@@ -58,6 +58,14 @@ cnpm i husky -D
 
 -   有了 `husky` 我们如果要验证我们每次的 `git commit` 的话，可以安装 `commitlint`
 
+```js
+ "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
+        }
+    },
+```
+
 ## package.json 说明
 
 ```js
