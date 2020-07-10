@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "commitlint -e $HUSKY_GIT_PARAMS",
         "dev": "webpack-dev-server --mode development",
         "build": "webpack --mode production"
     },
@@ -12,12 +12,14 @@
     "license": "ISC",
     "husky": {
         "hooks": {
-            "pre-commit": "npm test",
-            "pre-push": "npm test",
-            "...": "..."
+            "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+            "pre-commit": "eslint \"src/**/*.{js,ts,vue}\"",
+            "pre-push": "npm test"
         }
     },
     "devDependencies": {
+        "@commitlint/cli": "^9.0.1",
+        "@commitlint/config-conventional": "^9.0.1",
         "@types/react": "^16.9.41",
         "@types/react-dom": "^16.9.8",
         "@typescript-eslint/eslint-plugin": "^3.6.0",

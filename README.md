@@ -1,6 +1,6 @@
 ## 目标
 
--   [x] 添加 eslint 和 prettier，husky 配置
+-   [x] 添加 eslint 和 prettier，husky(commitlint) 配置
 -   [x] 添加 react-router-dom 支持
 -   [x] 添加 mobx 支持
 -   [x] 添加 scss 支持
@@ -55,6 +55,8 @@ npm i prettier eslint-config-prettier eslint-plugin-prettier -D
 ```bash
 cnpm i husky -D
 ```
+
+-   有了 `husky` 我们如果要验证我们每次的 `git commit` 的话，可以安装 `commitlint`
 
 ## package.json 说明
 
