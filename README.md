@@ -1,7 +1,7 @@
 ## 目标
 
 -   [x] 添加 eslint 和 prettier，husky(commitlint) 配置
--   [x] 添加 react-router-dom 支持
+-   [x] 添加 react-router-dom 支持(https://segmentfault.com/q/1010000015912149/)
 -   [x] 添加 mobx 支持
 -   [x] 添加 scss 支持
 -   [x] 添加函数式编程，hooks
