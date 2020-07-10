@@ -1,10 +1,10 @@
 ## 目标
 
-[] 添加 mobx 支持
-[] 添加 scss 支持
-[] 添加 react-router-dom 支持
-[] 添加函数式编程，hooks
-[] 添加主要应用 use 等
+-   [] 添加 mobx 支持
+-   [] 添加 scss 支持
+-   [] 添加 react-router-dom 支持
+-   [] 添加函数式编程，hooks
+-   [] 添加主要应用 use 等
 
 ## webpack 启动说明
 
