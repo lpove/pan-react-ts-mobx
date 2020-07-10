@@ -1,8 +1,9 @@
 ## 目标
 
+-   [x] 添加 eslint 和 prettier，husky 配置
+-   [x] 添加 react-router-dom 支持
 -   [x] 添加 mobx 支持
 -   [x] 添加 scss 支持
--   [x] 添加 react-router-dom 支持
 -   [x] 添加函数式编程，hooks
 -   [x] 添加主要应用 use 等
 
@@ -11,6 +12,48 @@
 ```bash
 - cnpm install
 - npm run dev
+```
+
+## eslint&prettier 配置说明
+
+### 安装和初始化 `eslint`
+
+```bash
+sudo npm  i eslint -g
+eslint --init
+```
+
+-   配置
+
+```
+module.exports = {
+  parser: {},  // 解析器
+  extends: [], // 继承的规则 [扩展]
+  plugins: [], // 插件
+  rules: {}    // 规则
+};
+```
+
+### 安装和初始化 prettier
+
+```bash
+npm i prettier eslint-config-prettier eslint-plugin-prettier -D
+```
+
+```js
+// .eslintrc.js
+ "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        'plugin:prettier/recommended',
+    ],
+```
+
+### husky 配置提交检测
+
+```bash
+cnpm i husky -D
 ```
 
 ## package.json 说明
